@@ -1,0 +1,69 @@
+### Hola mundo!
+GET http://127.0.0.1:8000
+
+### Hola
+POST http://127.0.0.1:8000/hola
+
+
+### consultar todos los contactos
+GET http://127.0.0.1:8000/amigo
+
+### consultar contacto
+GET http://127.0.0.1:8000/amigo/2
+
+### crear contacto
+POST http://127.0.0.1:8000/amigo
+Content-Type: application/json
+
+{
+    "nombre": "Pepe",
+    "email": "ana@test.com",
+    "telefono": "12345"
+}
+
+### modificar contacto
+PUT http://127.0.0.1:8000/amigo/2
+Content-Type: application/json
+
+{
+    "nombre": "Pepe",
+    "email": "pepe@test.com",
+    "telefono": "789456"
+}
+
+### borrar contacto
+DELETE http://127.0.0.1:8000/amigo/3
+
+#### Versión 2 #########################
+### consultar todos los contactos
+GET http://127.0.0.1:8000/amigos-v2
+
+### consultar contacto
+GET http://127.0.0.1:8000/amigos-v2/2
+
+### crear contacto
+POST http://127.0.0.1:8000/amigos-v2
+Content-Type: application/json
+
+{
+    "nombre": "Pepe",
+    "email": "ana@test.com",
+    "telefono": "12345"
+}
+
+### modificar contacto
+PUT http://127.0.0.1:8000/amigos-v2/4
+Content-Type: application/json
+
+{
+    "nombre": "Pepe",
+    "email": "pepe@test.com",
+    "telefono": "789456"
+}
+
+### borrar contacto
+DELETE http://127.0.0.1:8000/amigos-v2/3
+
+###
+
+GET http://127.0.0.1:8000/test

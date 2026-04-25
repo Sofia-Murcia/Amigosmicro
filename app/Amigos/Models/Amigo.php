@@ -1,0 +1,10 @@
+<?php
+namespace App\Amigos\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Amigo extends Model {
+
+    protected $table = 'amigos';
+    public $timestamps = false;
+}
